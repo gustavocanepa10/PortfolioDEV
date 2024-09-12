@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+:root {
+    /* cores */
+    --color-red:#E3646E;
+    --color-purple:#BB72E9;
+    --color-blue:#3996DB;
+    --color-green:#82BC4F;
+    --color-yellow:#EABD5F;
+
+
+    
+
+}
+
+
+header {
+    background-image: url(/assets/Background_Intro.png);
+    height: 750px;
+    width: 100%;
+    
+}
+
+h2 {
+   
+font-family: 'Inconsolata';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 120%;
+color: #C0C4CE;
+
+ 
+
+}
+
+h1 {
+font-family: 'Asap';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 120%;
+
+color: #E2E4E9;
+
+
+
+
+
+}
+
+
+p {
+    
+
+
+
+font-family: 'Maven Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 140%;
+color: #878EA1;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
