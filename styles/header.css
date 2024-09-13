@@ -1,6 +1,23 @@
 
-
+.img-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
     
+    
+}
+
+
+strong {
+    color: var(--color-red);
+}
+
+div img {
+    width: 87.27;
+    height: 87.27;
+}
+
+   
 
 
 
@@ -9,5 +26,48 @@
     flex-direction: column;
     text-align: center;
     padding: 120px 163px 163px 163px;
+    max-width: 1040px;
+    margin: auto;
+    
+    
     
 }
+
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.text  {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    
+    
+    
+}
+
+.tags {
+    display: flex;
+    align-self: center;
+}
+.tags ul {
+    display:flex;
+    list-style: none;
+    padding-block: 80px;
+    gap: 16px;
+    flex-direction: row;
+
+    
+}
+
+
+
+
+    
+    
+  
