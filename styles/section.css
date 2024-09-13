@@ -1,0 +1,32 @@
+.contato {
+    background-image: url(/assets/Background_Contacts.png);
+    display: flex;
+    
+    text-align: center;
+    
+    gap: 8px;
+    
+    
+    
+}
+
+.contatos {
+    
+    display: flex;
+    flex-direction: column;
+    
+    
+    margin-top: 128px;
+    text-align: center;
+   
+}
+
+
+
+
+
+
+
+
+
+

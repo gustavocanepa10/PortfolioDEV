@@ -1,6 +1,8 @@
 .container-main {
   padding-block: 72px;
   background-color: #0D0E11;
+  width: 100%;
+  
   
   
 
@@ -24,27 +26,36 @@ color: #E2E4E9;
 
 }
 
-
-
-
-
-  
-  
-
-
-
-.card {
-  position: relative;
-  border-radius: 4px;
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: #292C34;
-    inset: 0;
-    
-
-  }
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px;
+  padding: 20px; 
 }
+
+
+
+.card img {
+  width: 100%; 
+  height: auto; 
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
 
 
 
