@@ -1,0 +1,77 @@
+
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 0.75rem;
+    background-color: black;
+    border-bottom: 1px solid slategray;
+    padding: 1rem;
+    z-index: 1;
+    
+    
+    
+   
+}
+
+.header nav div a {
+    
+    font-size: 32px;
+    text-decoration: none;
+    color: #FFFF;
+
+    font-weight: bold;
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    
+    
+    
+    
+   
+
+}
+
+.header nav ul {
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;
+    
+
+    
+}
+
+.header li {
+    list-style: none;
+     color: #FFFF;
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+    padding: 3px;
+
+   
+    
+    
+
+   
+    
+
+}
+
+.selected {
+    border-bottom: 2px solid cyan;
+    transition: ease-in-out 500ms;
+   
+}
+
+
+
