@@ -5,7 +5,7 @@ import movie from "../../assets/image-movie.png";
 import keeper from "../../assets/keeper.png";
 import event from "../../assets/event.png";
 import react from "../../assets/physics.png"
-import typescript from "../../assets/typescript.png"
+import encurta from "../../assets/encurta.png"
 import html from "../../assets/html-5.png"
 import css from "../../assets/text.png"
 import refund from "../../assets/refund.png"
@@ -51,7 +51,16 @@ const projects = [
     description : "O Refund é uma aplicação web, feita com o objetivo de ser simples e intuitiva, é destinada a facilitar o processo de solicitação de reembolsos.",
     linkGitHub : "https://github.com/gustavocanepa10/Refund",
     linkDeploy : "https://refund-nine.vercel.app/"
+  },
+
+  {
+    name : "EncurtaURL",
+    image : encurta,
+    description : "Um encurtador de links simples e funcional, desenvolvido com React.js, que consome a API da Bitly para gerar URLs curtas de forma prática e rápida.",
+    linkGitHub : "https://github.com/gustavocanepa10/Encurtador-Front",
+    linkDeploy : "https://encurtador-front-livid.vercel.app/"
   }
+
 ];
 
 export function Projects() {
