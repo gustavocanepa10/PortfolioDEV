@@ -1,23 +1,17 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { Project } from "../Project/Project";
 
-import movie from "../../assets/image-movie.png";
-import keeper from "../../assets/keeper.png";
-import event from "../../assets/event.png";
-import react from "../../assets/physics.png"
+import event from "../../assets/event.png"
+import keeper from "../../assets/keeper.png"
+import movie from "../../assets/image-movie.png"
 import encurta from "../../assets/encurta.png"
-import html from "../../assets/html-5.png"
-import css from "../../assets/text.png"
 import refund from "../../assets/refund.png"
+
+import react from "../../assets/physics.png"
+import html from "../../assets/html-5.png"
 import js from "../../assets/js.png"
-
-
-
-
-
-
-
-
+import text from "../../assets/text.png"
 
 const projects = [
   {
@@ -26,6 +20,7 @@ const projects = [
       "Aplicativo mobile para gerenciamento de eventos com autenticação biométrica, envio de imagens e localização via GPS, além de uma interface moderna.",
     image : event,
     linkGitHub: "https://github.com/gustavocanepa10/my-app",
+    skills : [react, html, text]
   },
   {
     name: "Keeper",
@@ -35,6 +30,8 @@ const projects = [
     image: keeper,
     linkDeploy: "https://keeper-two-blue.vercel.app",
     linkGitHub: "https://github.com/gustavocanepa10/keeper",
+    skills : [react, html,text]
+
   },
   {
     name: "The Movie Tracker",
@@ -42,7 +39,9 @@ const projects = [
       "TheMovieTracker é um projeto prático em que exercitei o consumo de APIs com fetch, o uso da Context API do React e a construção de uma interface moderna.",
     linkGitHub: "https://github.com/gustavocanepa10/TheMovieTracker",
     linkDeploy: "https://the-movie-tracker-psi.vercel.app/",
-    image : movie
+    image : movie,
+    skills : [react, html,text]
+
   },
 
   {
@@ -50,7 +49,9 @@ const projects = [
     image : refund,
     description : "O Refund é uma aplicação web, feita com o objetivo de ser simples e intuitiva, é destinada a facilitar o processo de solicitação de reembolsos.",
     linkGitHub : "https://github.com/gustavocanepa10/Refund",
-    linkDeploy : "https://refund-nine.vercel.app/"
+    linkDeploy : "https://refund-nine.vercel.app/",
+    skills : [html, js, text]
+
   },
 
   {
@@ -58,7 +59,9 @@ const projects = [
     image : encurta,
     description : "Um encurtador de links simples e funcional, desenvolvido com React.js, que consome a API da Bitly para gerar URLs curtas de forma prática e rápida.",
     linkGitHub : "https://github.com/gustavocanepa10/Encurtador-Front",
-    linkDeploy : "https://encurtador-front-livid.vercel.app/"
+    linkDeploy : "https://encurtador-front-livid.vercel.app/",
+    skills : [react, html, text]
+
   }
 
 ];
@@ -78,112 +81,9 @@ export function Projects() {
           marginTop: "2rem",
         }}
       >
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            style={{
-              backgroundColor: "#1e1e1e",
-              color: "white",
-              borderRadius: "12px",
-              padding: "1.5rem",
-              width: "280px",
-              boxShadow: "0 4px 12px rgba(0,0,0,0.5)",
-              display: "flex",
-              flexDirection: "column",
-              alignContent : "center",
-              justifyContent : "center",
-              gap: "1rem",
-              textAlign: "justify",
-            }}
-          >
-            <img
-              src={project.image}
-              alt={project.name}
-              style={{
-                width: "100%",
-                height: "160px",
-                objectFit: "cover",
-                borderRadius: "8px",
-              }}
-            />
-            <h2 style={{ fontSize: "1.25rem", fontWeight: "600" }}>
-              {project.name}
-            </h2>
-            <p style={{ fontSize: "0.95rem", color: "#ccc" }}>
-              {project.description}
-            </p>
 
-            
-
-                <div style={{display : "flex",flexDirection : "column", gap : "4px", marginTop : "auto", justifyContent : "center"}}>
-                    
-                    <p style={{fontSize : "16px"}}>Stack utilizada:</p>
-                    <div style={{display : "flex", marginTop :" 0.5rem"}}>
-                        
-                    <img style={{width : 30, height : 30}} src={react} alt="" />
-                    <img style={{width : 30, height : 30}} src={html} alt="" />
-                    <img style={{width : 30, height : 30}}  src={js} alt="" />
-                    <img style={{width : 30, height : 30}} src={css} alt="" />
-                    
-
-
-                    
-
-
-                    </div>
-
-                    
-                
-
-                </div>
-                
-           
-
-            <div style={{ display: "flex",marginTop : "auto", justifyContent: "space-around", alignContent : "baseline"}}>
-              <a
-                href={project.linkGitHub}
-                target="_blank"
-                style={{
-                  justifyContent: "center",
-                  cursor: "pointer",
-                  width: 105,
-                  height: 35,
-                  borderRadius: "8px",
-                  border: "1px solid azure",
-                  display: "flex",
-                  gap: 4,
-                  padding: "6px",
-                  alignItems: "center",
-                  
-                 
-                }}
-              >
-                <img src="src/assets/github.svg" alt="" />
-                <span>GitHub</span>
-              </a>
-
-              <a
-                href={project.linkDeploy}
-                target="_blank"
-                style={{
-                  justifyContent: "center",
-                  cursor: "pointer",
-                  width: 105,
-                  height: 35,
-                  borderRadius: "8px",
-                  border: "1px solid azure",
-                  display: "flex",
-                  gap: 6,
-                  padding: "6px",
-                  alignItems: "center",
-                }}
-              >
-                <span>Visitar</span>
-                <ArrowRight />
-              </a>
-            </div>
-          </div>
-        ))}
+        {projects.map((project) => <Project project = {project}  image = {project.image} />)}
+        
       </div>
     </div>
   );
