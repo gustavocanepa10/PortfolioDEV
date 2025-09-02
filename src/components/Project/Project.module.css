@@ -1,0 +1,66 @@
+
+
+.project {
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0 0 0 0.5);
+    display: flex;
+    flex-direction: column;
+    align-content : center;
+    justify-content : center;
+    gap: 1rem;
+    text-align: justify;
+
+
+
+    
+
+    h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-size:0.95rem;
+        color:#ccc;
+    }
+}
+
+.skillsContainer {
+    display : flex;
+    flex-direction : column;
+    gap : 4px;
+    margin-top : auto;
+     justify-content: center;
+}
+
+.skills {
+    display : flex;
+    margin-top :0.5rem;
+}
+
+.links {
+    display: flex;
+    margin-top : auto;
+    justify-content: space-around;
+    align-content : baseline;
+
+    a {
+        justify-content: center;
+        width: 105;
+        height: 35;
+        border-radius: 8px;
+        border: 1px solid azure;
+        display: flex;
+        gap: 4px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+    }
+}
