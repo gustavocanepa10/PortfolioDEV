@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react"
 import { Skill } from "../Skill/Skill"
+import GitHub from "../../assets/github.svg"
 
 import styles from "./Project.module.css"
 
@@ -53,7 +54,7 @@ export function Project({project}) {
                 target="_blank"
                 
               >
-                <img src="src/assets/github.svg" alt="" />
+                <img src={GitHub} alt="" />
                 <span>GitHub</span>
               </a>
 
