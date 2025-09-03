@@ -16,7 +16,7 @@
 
 
 
-    
+
 
     h2 {
         font-size: 1.25rem;
@@ -40,6 +40,7 @@
 .skills {
     display : flex;
     margin-top :0.5rem;
+
 }
 
 .links {
@@ -55,7 +56,7 @@
         border-radius: 8px;
         border: 1px solid azure;
         display: flex;
-        gap: 4px;
+        gap: 6px;
         padding: 10px;
         align-items: center;
     }
@@ -63,4 +64,11 @@
     a:hover {
         transform: scale(1.1);
     }
+
+
+    img {
+    width: 25px;
+    height: 25px;
 }
+}
+
