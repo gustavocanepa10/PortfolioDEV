@@ -22,6 +22,16 @@ const projects = [
     linkGitHub: "https://github.com/gustavocanepa10/my-app",
     skills : [react, html, text]
   },
+
+  {
+    name : "EncurtaURL",
+    image : encurta,
+    description : "Um encurtador de links simples e funcional, desenvolvido com React.js, que consome a API da Bitly para gerar URLs curtas de forma prática e rápida.",
+    linkGitHub : "https://github.com/gustavocanepa10/Encurtador-Front",
+    linkDeploy : "https://encurtador-front-livid.vercel.app/",
+    skills : [react, html, text]
+
+  },
   {
     name: "Keeper",
     description:
@@ -54,15 +64,6 @@ const projects = [
 
   },
 
-  {
-    name : "EncurtaURL",
-    image : encurta,
-    description : "Um encurtador de links simples e funcional, desenvolvido com React.js, que consome a API da Bitly para gerar URLs curtas de forma prática e rápida.",
-    linkGitHub : "https://github.com/gustavocanepa10/Encurtador-Front",
-    linkDeploy : "https://encurtador-front-livid.vercel.app/",
-    skills : [react, html, text]
-
-  }
 
 ];
 
