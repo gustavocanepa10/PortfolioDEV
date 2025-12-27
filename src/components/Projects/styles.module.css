@@ -1,5 +1,22 @@
-div a:hover {
 
-    transform: scale(2,2);
+.projectsContainer {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  align-items: center;
+  padding: 12px;
+  gap: 4rem;
 
+  h1 {
+    color: white;
+    font-weight: normal;
+    padding-left: 10rem;
+  }
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 2rem;
 }

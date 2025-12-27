@@ -9,13 +9,9 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   overflow-x: hidden;
-  
 }
-
-
-
 
 .container-skills {
   background-color: #0b0b0b;
@@ -25,26 +21,18 @@ body{
   width: 100%;
   align-items: center;
   gap: 8rem;
-  
-  
-  
-  
+
   h1 {
     color: white;
     font-weight: normal;
     padding-left: 4rem;
-    
   }
 }
 
 .main-template {
   width: 100%;
   min-height: 100vh;
-
-  
-  
 }
-
 
 .skill-card {
   width: 120px;
@@ -55,68 +43,28 @@ body{
   justify-content: center;
   border: 1px solid slategrey;
   box-shadow: 1px black;
-  
 
   img {
     width: 60px;
     height: 60px;
   }
-  
 }
-
-
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
 }
 
 
-.projects-container {
-    
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  min-height: 100vh;
-  width: 100%;
-  align-items: center;
-  gap: 4rem;
-  
-  
-  
 
-
-  h1 {
-    color: white;
-    font-weight: normal;
-    padding-left: 10rem;
-   
-  
-
+@media (max-width: 1100px) {
+  .main-template {
+    width: 1100px;
   }
-
 }
 
-.project-container {
-
-  display: grid;
-  grid-template-columns: repeat(3,2fr);
-  gap: 2rem;
- 
- 
-
-}
-
-@media (max-width : 1100px) {
-    .main-template {
-        width: 1100px;
-    }
-
-    
-}
-
-a, button {
+a,
+button {
   cursor: pointer;
 }
-
